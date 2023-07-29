@@ -3,29 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles\style.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles\styleform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello</h1>
-    <img src="images\Cat.jpg">
-    <form>
-        <fieldset>
-            <legend>ข้อมูลส่วนตัว</legend>
-            
-            <label>ชื่อ-นามสกุล :</label>
-            <input type="text"><br><br>
-            <label>อายุ :</label>
-            <input type="number">
-            
-        </fieldset>
-
-        <fieldset>
-            <legend>วัน</legend>
-            <input type="date">
-        </fieldset>
-        <button type="submit">Submit</button>
-        <input type="reset" value="reset">
-    </form>
+    <header>
+        <div class="boxtop">
+            <div class="left">
+                <a href="#"><button class="top">HOME</button></a>
+                <a href="#"><button class="top">Content</button></a>
+            </div>
+            <div class="right">
+                <a href="#"><button class="top">Sign In</button></a>
+                <a href="#"><button class="top">Sign Up</button></a>    
+            </div>
+        </div>
+    </header>
+    <h1>Sign Up</h1>
+    <div class="content">
+        <form>
+            <p class="below">Please fill in all information</p><hr>
+            <fieldset>
+                <legend>Personal information</legend>
+                <label>Prefix:</label>
+                <select required>
+                    <option disabled selected value="">-</option>
+                    <option value="1">Mr.</option>
+                    <option value="2">Ms.</option>
+                    <option value="3">Mrs.</option>
+                </select><br>
+                <label>Name:</label>
+                <input type="text" placeholder="Your name.."><br>
+                <label>Surname:</label>
+                <input type="text" placeholder="Your surname.."><br>
+                <label>Email:</label>
+                <input type="text"placeholder="Your email.."><br>
+                <label>Date of birth :</label>
+                <input type="date"><br>
+                <label>You are ...</label><br>
+                    <input type="radio" name="You">
+                    <label>Student</label>
+                    <input type="radio" name="You">
+                    <label>Teacher</label>
+                    <input type="radio" name="You">
+                    <label>Other</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Account Information</legend>
+                <label>Username:</label>
+                <input type="text" placeholder="Your username.."><br>
+                <label>Password:</label>
+                <input type="password" placeholder="Your password.."><br>
+                <label>Confirm Password :</label>
+                <input type="password"placeholder="Confirm your password.."><br>
+            </fieldset><br>
+            <div class="buttondown">
+                <button class="resub" type="reset">Reset</button>
+                <button class="resub" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
